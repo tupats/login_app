@@ -2,9 +2,10 @@ import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:login_app/features/common/models/user_model.dart';
+import 'package:login_app/gen/assets.gen.dart';
 import 'package:login_app/utils/extensions/context.dart';
-import 'package:login_app/utils/text_styles.dart';
 import 'package:login_app/features/common/widgets/app_bar.dart';
+import 'package:login_app/utils/extensions/text_style.dart';
 
 import '../auth/cubit/auth_cubit.dart';
 import 'info_tile.dart';
@@ -26,9 +27,9 @@ class HomeScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             const SizedBox(height: 20),
-            const CircleAvatar(
+            CircleAvatar(
               radius: 62,
-              backgroundImage: NetworkImage('https://picsum.photos/200/300'),
+              backgroundImage: Assets.images.avatar.provider(),
             ),
             const SizedBox(height: 20),
             Text(
@@ -65,7 +66,7 @@ class HomeScreen extends StatelessWidget {
               onPressed: () {},
               child: Text(
                 'Edit',
-                style: AppTextStyles.underline(context),
+                style: context.textTheme.bodyMedium?.darkOrange.underline,
               ),
             ),
             const SizedBox(height: 24),

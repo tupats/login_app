@@ -21,6 +21,9 @@ class AppScreen extends StatelessWidget {
         listener: (context, state) {
           if (state is AuthAuthenticated) {
             context.router.replaceAll([HomeRoute(user: state.user)]);
+            ScaffoldMessenger.of(context).showSnackBar(
+              const SnackBar(content: Text('Authenticated')),
+            );
             return;
           }
           if (state is AuthUnauthenticated) {

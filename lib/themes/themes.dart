@@ -3,20 +3,8 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:login_app/utils/colors.dart';
 
 ThemeData get theme {
-  final textTheme = TextTheme(
-    titleLarge: GoogleFonts.ubuntu().copyWith(
-      fontSize: 24,
-      color: AppColors.blueishGray,
-    ),
-    bodyMedium: GoogleFonts.roboto().copyWith(
-      fontSize: 16,
-      color: AppColors.gray,
-    ),
-    labelMedium: GoogleFonts.roboto().copyWith(
-      fontSize: 14,
-      color: Colors.white.withOpacity(0.38),
-    ),
-  );
+  final textTheme = _textTheme();
+
   return ThemeData(
     useMaterial3: true,
     primarySwatch: Colors.teal,
@@ -95,3 +83,18 @@ ThemeData get theme {
     textTheme: textTheme,
   );
 }
+
+TextTheme _textTheme() => TextTheme(
+      titleLarge: GoogleFonts.ubuntu().copyWith(
+        fontSize: 24,
+        color: AppColors.blueishGray,
+      ),
+      bodyMedium: GoogleFonts.roboto().copyWith(
+        fontSize: 16,
+        color: AppColors.gray,
+      ),
+      labelMedium: GoogleFonts.roboto().copyWith(
+        fontSize: 14,
+        color: Colors.white.withOpacity(0.38),
+      ),
+    );

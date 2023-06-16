@@ -1,6 +1,7 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:login_app/utils/text_styles.dart';
+import 'package:login_app/utils/extensions/context.dart';
+import 'package:login_app/utils/extensions/text_style.dart';
 
 class AuthSuggestion extends StatelessWidget {
   final String title;
@@ -28,7 +29,7 @@ class AuthSuggestion extends StatelessWidget {
           TextSpan(
             text: buttonTitle,
             recognizer: TapGestureRecognizer()..onTap = onButtonPressed,
-            style: AppTextStyles.underline(context),
+            style: context.textTheme.bodyMedium?.darkOrange.underline,
           ),
         ],
       ),

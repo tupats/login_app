@@ -11,9 +11,10 @@ void main() {
 }
 
 class LoginApp extends StatelessWidget {
-  final _router = getIt<AppRouter>();
+  final AppRouter _router;
 
-  LoginApp({super.key});
+  LoginApp({super.key, AppRouter? router})
+      : _router = router ?? getIt<AppRouter>();
 
   @override
   Widget build(BuildContext context) {
