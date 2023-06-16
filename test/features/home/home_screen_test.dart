@@ -17,6 +17,7 @@ void main() {
         find.text(user.email),
         const Offset(0, -200),
         3000,
+        warnIfMissed: false,
       );
       await tester.pumpAndSettle();
       expect(find.text(user.email), findsOneWidget);

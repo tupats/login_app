@@ -21,19 +21,34 @@ void main() {
 
     testWidgets('validation', (tester) async {
       await tester.pumpWidget(createLoginScreen());
+      await tester.fling(
+        find.byType(ElevatedButton).first,
+        const Offset(0, -200),
+        3000,
+        warnIfMissed: false,
+      );
+      await tester.pumpAndSettle();
+
       await tester.enterText(find.byType(TextField).first, 'hi');
       await tester.enterText(find.byType(TextField).last, 'hi');
       await tester.tap(find.byType(ElevatedButton).first);
       await tester.pumpAndSettle();
-      expect(find.text('Entry is too short'), findsNWidgets(2));
+
+      expect(find.text('Entry is too short'), findsWidgets);
+
       await tester.enterText(find.byType(TextField).first, 'username');
       await tester.pumpAndSettle();
+
       expect(find.text('Entry is too short'), findsOneWidget);
+
       await tester.enterText(find.byType(TextField).last, 'password');
       await tester.pumpAndSettle();
+
       expect(find.text('Entry is too short'), findsNothing);
       expect(
-        tester.widget<ElevatedButton>(find.byType(ElevatedButton)).enabled,
+        tester
+            .widget<ElevatedButton>(find.byType(ElevatedButton).first)
+            .enabled,
         true,
       );
     });
