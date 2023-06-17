@@ -1,9 +1,10 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:login_app/utils/di.dart';
-import 'package:login_app/features/auth/repository/auth_repository.dart';
-import 'package:login_app/router/router.dart';
+import '../features/common/widgets/glitch_shader.dart';
+import '../utils/di.dart';
+import '../features/auth/repository/auth_repository.dart';
+import 'router.dart';
 
 import '../features/auth/cubit/auth_cubit.dart';
 
@@ -38,7 +39,7 @@ class AppScreen extends StatelessWidget {
         },
         child: RepaintBoundary(
           key: _key,
-          child: const AutoRouter(),
+          child: const GlitchShader(child: AutoRouter()),
         ),
       ),
     );

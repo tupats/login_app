@@ -1,6 +1,6 @@
 import 'package:bloc/bloc.dart';
-import 'package:login_app/features/auth/repository/auth_repository.dart';
-import 'package:login_app/features/common/models/user_model.dart';
+import '../repository/auth_repository.dart';
+import '../../common/models/user_model.dart';
 import 'package:meta/meta.dart';
 
 part 'auth_state.dart';

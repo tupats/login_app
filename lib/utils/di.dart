@@ -1,6 +1,6 @@
 import 'package:get_it/get_it.dart';
-import 'package:login_app/features/auth/repository/auth_repository.dart';
-import 'package:login_app/router/router.dart';
+import '../features/auth/repository/auth_repository.dart';
+import '../router/router.dart';
 
 final getIt = GetIt.instance;
 

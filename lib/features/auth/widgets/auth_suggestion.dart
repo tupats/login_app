@@ -1,7 +1,7 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:login_app/utils/extensions/context.dart';
-import 'package:login_app/utils/extensions/text_style.dart';
+import '../../../utils/extensions/context.dart';
+import '../../../utils/extensions/text_style.dart';
 
 class AuthSuggestion extends StatelessWidget {
   final String title;

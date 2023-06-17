@@ -1,11 +1,11 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:login_app/features/common/models/user_model.dart';
-import 'package:login_app/gen/assets.gen.dart';
-import 'package:login_app/utils/extensions/context.dart';
-import 'package:login_app/features/common/widgets/app_bar.dart';
-import 'package:login_app/utils/extensions/text_style.dart';
+import '../../utils/gen/assets.gen.dart';
+import '../common/models/user_model.dart';
+import '../../utils/extensions/context.dart';
+import '../common/widgets/app_bar.dart';
+import '../../utils/extensions/text_style.dart';
 
 import '../auth/cubit/auth_cubit.dart';
 import 'info_tile.dart';

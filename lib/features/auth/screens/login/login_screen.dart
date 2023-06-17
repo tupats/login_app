@@ -1,10 +1,10 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:login_app/features/auth/widgets/social_login_list.dart';
-import 'package:login_app/gen/assets.gen.dart';
-import 'package:login_app/router/router.dart';
-import 'package:login_app/features/common/widgets/app_bar.dart';
+import '../../../../utils/gen/assets.gen.dart';
+import '../../widgets/social_login_list.dart';
+import '../../../../router/router.dart';
+import '../../../common/widgets/app_bar.dart';
 import 'package:reactive_forms/reactive_forms.dart';
 
 import '../../../common/widgets/submit_button.dart';

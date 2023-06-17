@@ -1,6 +1,6 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
-import 'package:login_app/router/wrapper.dart';
+import 'wrapper.dart';
 
 import '../features/auth/screens/login/login_screen.dart';
 import '../features/auth/screens/signup/signup_screen.dart';

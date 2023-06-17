@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:login_app/utils/colors.dart';
+import '../utils/colors.dart';
 
 ThemeData get theme {
   final textTheme = _textTheme();
@@ -9,6 +9,7 @@ ThemeData get theme {
     useMaterial3: true,
     primarySwatch: Colors.teal,
     visualDensity: VisualDensity.adaptivePlatformDensity,
+    scaffoldBackgroundColor: Colors.white,
     colorScheme: const ColorScheme(
       background: Colors.white,
       brightness: Brightness.light,

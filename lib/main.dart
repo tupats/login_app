@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:login_app/utils/di.dart';
-import 'package:login_app/router/router.dart';
-import 'package:login_app/themes/themes.dart';
-import 'package:login_app/utils/forms.dart';
+import 'utils/di.dart';
+import 'router/router.dart';
+import 'themes/themes.dart';
+import 'utils/forms.dart';
 import 'package:reactive_forms/reactive_forms.dart';
 
 void main() {

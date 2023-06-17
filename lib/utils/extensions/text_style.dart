@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:login_app/utils/colors.dart';
+import '../colors.dart';
 
 extension AppTextStyle on TextStyle {
   TextStyle get underline => copyWith(

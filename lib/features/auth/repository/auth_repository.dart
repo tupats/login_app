@@ -1,4 +1,4 @@
-import 'package:login_app/features/common/models/user_model.dart';
+import '../../common/models/user_model.dart';
 
 class AuthRepository {
   Future<User> login({
